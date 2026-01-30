@@ -1,4 +1,4 @@
-# Robot
+# Robot board
 
 ## Disclaimer
 
