@@ -4,6 +4,22 @@
 
 Flashing custom firmware can brick your device. Proceed at your own risk.
 
+## Quick start
+
+You can find the whole process of build if you want to do it yourself.
+If you would like to take a shortcut, here it is.
+
+```bash
+# Setup the virtual env first
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -U pip
+pip install esptool
+
+# Flashing
+esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash 0x0 firmware.factory.bin
+```
+
 ## Board identification
 
 It took a while to identify the board since I thought it is a Heltec 2.0.
