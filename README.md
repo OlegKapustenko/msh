@@ -6,7 +6,7 @@ Flashing custom firmware can brick your device. Proceed at your own risk.
 
 ## Quick start
 
-You can find the whole process of build if you want to do it yourself.
+In the next chapter you can find the whole process of build if you want to do it yourself.
 If you would like to take a shortcut, here it is.
 
 ```bash
@@ -23,6 +23,7 @@ esptool.py --chip esp32 --port /dev/ttyUSB0 write_flash 0x0 firmware.factory.bin
 ## Board identification
 
 It took a while to identify the board since I thought it is a Heltec 2.0.
+After a few weeks I finally found it is the Heltec 2_1 board.
 I tried to flash many versions of firmware but none of them was working well.
 So, Gemini suggested to choose the criteria I have to check and try to
 build my own based on the stable version (2.7.15 for that moment).
